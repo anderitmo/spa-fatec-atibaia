@@ -208,6 +208,4 @@ Seguindo o princípio de separar o que é **fato** do que é **suposição**:
 ---
 
 ## Licença e créditos
-
-- Código de exemplo: sugestão de licença **MIT** (ajuste conforme sua preferência).
 - Dados de personagens: fornecidos pela **Dragon Ball API** (`https://dragonball-api.com`), projeto de terceiros. *Dragon Ball* e seus personagens são propriedade de seus respectivos detentores de direitos; este projeto é apenas educacional e não redistribui o conteúdo da API.
