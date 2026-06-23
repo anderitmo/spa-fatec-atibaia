@@ -260,5 +260,5 @@ SPA não é sempre a melhor escolha. Pontos a pesar:
 
 ---
 
-**Confiança: Média-Alta.**
-Os conceitos centrais (modelo MPA vs. SPA, papel do JS, roteamento via `hashchange` e History API, uso de `fetch`) são bem estabelecidos e estáveis. A confiança não é "Alta" plena por dois motivos: (1) os exemplos de produtos (Gmail, Maps etc.) são inferências baseadas em comportamento observável, não em verificação da arquitetura interna atual; (2) os trechos de código seguem o padrão das APIs do navegador mas **não foram executados neste ambiente** — recomendo testá-los antes da aula.
+**Referências**
+* 
