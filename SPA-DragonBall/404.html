@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+  ============================================================================
+  index.html — A "CASCA" (app shell) da nossa Single Page Application
+  ============================================================================
+  Numa SPA existe UMA única página HTML. É esta.
+  O navegador carrega este arquivo UMA vez; a partir daí, todo o conteúdo
+  é desenhado pelo JavaScript dentro da <div id="app">, SEM recarregar a página.
+
+  Note que NÃO há nenhum texto de conteúdo aqui dentro — só a estrutura.
+  Quem preenche a tela é o app.js.
+-->
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Z-Scouter — SPA com JS puro</title>
+
+  <!--
+    Fontes (opcionais). Dão personalidade de "leitor de scouter".
+    Se você estiver offline, o navegador usa as fontes de fallback do CSS.
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Cabeçalho fixo com a navegação. -->
+  <header class="topbar">
+    <a class="brand" href="/" data-link>
+      <span class="brand__dot"></span>
+      Z-SCOUTER
+    </a>
+
+    <nav class="nav">
+      <!--
+        data-link marca os links que o NOSSO roteador deve controlar.
+        O href continua sendo um caminho de verdade (importante para
+        acessibilidade e para "abrir em nova aba"), mas o JavaScript vai
+        INTERCEPTAR o clique e evitar o recarregamento da página.
+      -->
+      <a href="/" data-link>Início</a>
+      <a href="/personagens" data-link>Personagens</a>
+    </nav>
+  </header>
+
+  <!--
+    ESTE é o ponto onde cada "tela" é desenhada.
+    Toda navegação apenas troca o conteúdo desta div.
+  -->
+  <main id="app" class="app"></main>
+
+  <footer class="footer">
+    <span>Exemplo didático de SPA · JavaScript puro · History API</span>
+    <span>Dados: Dragon Ball API (dragonball-api.com)</span>
+  </footer>
+
+  <!--
+    O app.js é carregado por último, depois que a estrutura já existe no DOM.
+    type="module" nos dá escopo isolado (boas práticas), mas aqui usamos um
+    único arquivo simples.
+  -->
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+/* ============================================================================
+ * styles.css — Aparência da SPA
+ * ============================================================================
+ * O foco da aula é o JavaScript; o CSS aqui é só para a tela ficar agradável.
+ * Tema: "leitor de scouter" — fundo de espaço profundo + energia (ki) laranja.
+ * ========================================================================== */
+
+/* Tokens de cor e tipografia num só lugar, fáceis de ajustar. */
+:root {
+  --bg:        #0b0e17;   /* fundo espaço profundo */
+  --bg-soft:   #141a28;   /* cartões / blocos */
+  --line:      #232c40;   /* bordas sutis */
+  --text:      #e8ecf4;   /* texto principal */
+  --muted:     #8a94ad;   /* texto secundário */
+  --ki:        #ff8a00;   /* energia: laranja */
+  --ki-hot:    #ff5a1f;   /* energia quente (gradiente) */
+  --ok:        #ffd166;   /* dourado de destaque */
+
+  --display: "Oswald", "Arial Narrow", system-ui, sans-serif;
+  --body:    "Inter", system-ui, -apple-system, sans-serif;
+  --mono:    "Space Mono", ui-monospace, "Courier New", monospace;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(1200px 600px at 70% -10%, #1a2236 0%, transparent 60%),
+    var(--bg);
+  color: var(--text);
+  font-family: var(--body);
+  line-height: 1.55;
+  min-height: 100vh;
+}
+
+img { display: block; max-width: 100%; }
+
+/* --- Barra de topo --------------------------------------------------------- */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem clamp(1rem, 4vw, 3rem);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  background: rgba(11, 14, 23, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 10;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--display);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  font-size: 1.15rem;
+  color: var(--text);
+  text-decoration: none;
+}
+.brand__dot {
+  width: 14px; height: 14px; border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, var(--ok), var(--ki-hot));
+  box-shadow: 0 0 12px var(--ki);
+}
+
+.nav { display: flex; gap: 1.25rem; }
+.nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.15s;
+}
+.nav a:hover { color: var(--text); }
+
+/* --- Layout geral ---------------------------------------------------------- */
+.app {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: clamp(1.5rem, 4vw, 3rem) clamp(1rem, 4vw, 3rem);
+  min-height: 60vh;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 1.5rem clamp(1rem, 4vw, 3rem);
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+/* --- Botões ---------------------------------------------------------------- */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: border-color 0.15s, transform 0.05s;
+}
+.btn:hover { border-color: var(--ki); }
+.btn:active { transform: translateY(1px); }
+
+.btn--primary {
+  border: none;
+  background: linear-gradient(135deg, var(--ki), var(--ki-hot));
+  color: #1a1206;
+  font-weight: 600;
+}
+.btn.is-disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* --- Hero (tela inicial) --------------------------------------------------- */
+.hero { max-width: 640px; padding: clamp(1rem, 5vw, 3rem) 0; }
+.hero__eyebrow {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: var(--ki);
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+}
+.hero__title {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: clamp(2.4rem, 7vw, 4rem);
+  line-height: 1.02;
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+}
+.hero__lead { color: var(--muted); font-size: 1.05rem; margin: 0 0 1.75rem; }
+.hero__lead strong { color: var(--text); }
+
+/* --- Lista / grid de cards ------------------------------------------------- */
+.list__head { margin-bottom: 1.5rem; }
+.list__head h2 {
+  font-family: var(--display);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+.list__head p { color: var(--muted); margin: 0.25rem 0 0; font-size: 0.9rem; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color 0.15s, transform 0.15s;
+}
+.card:hover { border-color: var(--ki); transform: translateY(-3px); }
+
+.card__media {
+  aspect-ratio: 3 / 4;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: radial-gradient(circle at 50% 120%, #243049, transparent 70%);
+  overflow: hidden;
+}
+.card__media img { height: 100%; object-fit: contain; filter: drop-shadow(0 6px 12px rgba(0,0,0,0.5)); }
+
+.card__body { padding: 0.75rem 0.85rem 0.95rem; display: flex; flex-direction: column; gap: 0.2rem; }
+.card__name { font-family: var(--display); font-size: 1.1rem; margin: 0; }
+.card__race { color: var(--muted); font-size: 0.82rem; }
+.card__ki { font-family: var(--mono); font-size: 0.78rem; color: var(--ok); margin-top: 0.15rem; }
+
+/* --- Paginação ------------------------------------------------------------- */
+.pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.pager__info { font-family: var(--mono); font-size: 0.85rem; color: var(--muted); }
+
+/* --- Detalhe --------------------------------------------------------------- */
+.back {
+  display: inline-block;
+  color: var(--muted);
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+.back:hover { color: var(--ki); }
+
+.detail__top { display: grid; grid-template-columns: minmax(0, 320px) 1fr; gap: 2rem; align-items: start; }
+.detail__media {
+  background: radial-gradient(circle at 50% 110%, #243049, transparent 70%);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1rem;
+}
+.detail__info h1 {
+  font-family: var(--display);
+  text-transform: uppercase;
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin: 0 0 1rem;
+}
+
+.stats { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.6rem; }
+.stats li {
+  display: flex; justify-content: space-between;
+  border-bottom: 1px dashed var(--line);
+  padding-bottom: 0.4rem;
+}
+.stats span { color: var(--muted); }
+.stats strong { font-family: var(--mono); color: var(--ok); }
+
+.detail__block { margin-top: 2rem; }
+.detail__block h3 {
+  font-family: var(--display);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 1.1rem;
+  color: var(--ki);
+  margin: 0 0 0.6rem;
+}
+.detail__block p { color: var(--muted); margin: 0; }
+
+.trans-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+.trans { display: flex; gap: 0.6rem; align-items: center; background: var(--bg-soft); border: 1px solid var(--line); border-radius: 10px; padding: 0.5rem; }
+.trans img { width: 48px; height: 48px; object-fit: contain; }
+.trans strong { display: block; font-size: 0.9rem; }
+.trans__ki { font-family: var(--mono); font-size: 0.75rem; color: var(--ok); }
+
+/* --- Estados (carregando / erro) ------------------------------------------ */
+.state { text-align: center; padding: 4rem 1rem; color: var(--muted); }
+.state h2 { font-family: var(--display); color: var(--text); font-size: 2rem; margin: 0 0 0.5rem; }
+.state--error h2 { color: var(--ki-hot); }
+
+.spinner {
+  width: 38px; height: 38px;
+  margin: 0 auto 1rem;
+  border: 3px solid var(--line);
+  border-top-color: var(--ki);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* --- Responsivo ------------------------------------------------------------ */
+@media (max-width: 640px) {
+  .detail__top { grid-template-columns: 1fr; }
+  .detail__media { max-width: 280px; }
+}
+
+/* Respeita quem prefere menos animação. */
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
