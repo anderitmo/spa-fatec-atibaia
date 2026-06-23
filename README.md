@@ -1,6 +1,6 @@
 # Single Page Application (SPA)
 
-[Exemplo completo - Z-Scouter](https://anderitmo.github.io/spa-fatec-atibaia/SPA-DragonBall/)
+👉 [Exemplo completo - Z-Scouter](https://anderitmo.github.io/spa-fatec-atibaia/SPA-DragonBall/)
 
 > Resumo da aula — material de apoio para revisão e estudo.
 
