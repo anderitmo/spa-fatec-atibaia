@@ -1,4 +1,4 @@
-# Single Page Application (SPA) com JavaScript Puro
+# Single Page Application (SPA) com JS Puro e Responsividade
 
 Uma **Single Page Application (SPA)** é uma arquitetura de aplicações web em que apenas **uma única página HTML é carregada pelo navegador**. A partir desse momento, toda a navegação acontece através do JavaScript, que altera dinamicamente o conteúdo da interface sem realizar um novo carregamento da página.
 
