@@ -1,6 +1,8 @@
 # Single Page Application (SPA)
 
-👉 [Exemplo completo - Z-Scouter](https://anderitmo.github.io/spa-fatec-atibaia/SPA-DragonBall/)
+👉 [Exemplo completo - Guitar Shop MPA vs SPA](https://anderitmo.github.io/spa-fatec-atibaia/exemplo-app/)
+
+👉 [Exemplo 2 (complementar) - consumindo API pública](https://anderitmo.github.io/spa-fatec-atibaia/SPA-DragonBall/)
 
 > Resumo da aula — material de apoio para revisão e estudo.
 
