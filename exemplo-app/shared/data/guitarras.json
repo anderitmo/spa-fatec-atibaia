@@ -5,7 +5,7 @@
     "marca": "Fender",
     "categoria": "eletrica",
     "preco": 4899.9,
-    "imagem": "https://placehold.co/640x480/111827/f9fafb?text=Strato+Classic+60",
+    "imagem": "../img/FenderStratoClassic60.png",
     "descricao": "Guitarra eletrica versatil com timbre brilhante, ideal para blues, pop e rock classico.",
     "especificacoes": {
       "cordas": 6,
@@ -20,7 +20,7 @@
     "marca": "Gibson",
     "categoria": "eletrica",
     "preco": 7999.0,
-    "imagem": "https://placehold.co/640x480/1f2937/f9fafb?text=Les+Rock+Standard",
+    "imagem": "../img/GibsonLesRockStandard.png",
     "descricao": "Modelo eletrico de corpo solido com sustain encorpado e resposta potente para solos.",
     "especificacoes": {
       "cordas": 6,
@@ -35,7 +35,7 @@
     "marca": "Yamaha",
     "categoria": "acustica",
     "preco": 1899.5,
-    "imagem": "https://placehold.co/640x480/374151/f9fafb?text=Folk+Stage+Cutaway",
+    "imagem": "../img/YamahaFolkStageCutaway.png",
     "descricao": "Violao acustico com cutaway, boa projecao e tocabilidade confortavel para palco e estudo.",
     "especificacoes": {
       "cordas": 6,
@@ -50,7 +50,7 @@
     "marca": "Takamine",
     "categoria": "acustica",
     "preco": 3299.99,
-    "imagem": "https://placehold.co/640x480/4b5563/f9fafb?text=Jumbo+Natural+Pro",
+    "imagem": "../img/TakamineJumboNaturalPro.png",
     "descricao": "Violao jumbo com grave cheio e acabamento natural para acompanhamentos ricos.",
     "especificacoes": {
       "cordas": 6,
@@ -65,7 +65,7 @@
     "marca": "Squier",
     "categoria": "baixo",
     "preco": 2499.0,
-    "imagem": "https://placehold.co/640x480/111827/fbbf24?text=Precision+Bass",
+    "imagem": "../img/SquierPrecisionBassVintage.png",
     "descricao": "Baixo eletrico de quatro cordas com som direto, definido e facil de encaixar na mix.",
     "especificacoes": {
       "cordas": 4,
@@ -80,7 +80,7 @@
     "marca": "Ibanez",
     "categoria": "baixo",
     "preco": 2999.9,
-    "imagem": "https://placehold.co/640x480/1f2937/93c5fd?text=Jazz+Bass+Modern",
+    "imagem": "../img/IbanezJazzBassModern.png",
     "descricao": "Baixo com dois captadores e perfil moderno, indicado para funk, fusion e gospel.",
     "especificacoes": {
       "cordas": 5,
@@ -95,7 +95,7 @@
     "marca": "Giannini",
     "categoria": "classica",
     "preco": 699.9,
-    "imagem": "https://placehold.co/640x480/92400e/fff7ed?text=Classica+Estudo+C40",
+    "imagem": "../img/Gianinni.png",
     "descricao": "Violao classico com cordas de nylon, leve e acessivel para primeiros estudos.",
     "especificacoes": {
       "cordas": 6,
@@ -110,7 +110,7 @@
     "marca": "Cordoba",
     "categoria": "classica",
     "preco": 2199.0,
-    "imagem": "https://placehold.co/640x480/78350f/fffbeb?text=Concert+Nylon",
+    "imagem": "../img/Cordoba.png",
     "descricao": "Violao classico com timbre quente, indicado para repertorio erudito e MPB.",
     "especificacoes": {
       "cordas": 6,
