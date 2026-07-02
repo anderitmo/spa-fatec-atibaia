@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Shop MPA | Carrinho</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"]
+              },
+              colors: {
+                brand: {
+                  ink: "#1c1917",
+                  gold: "#f59e0b",
+                  paper: "#fafaf9"
+                }
+              }
+            }
+          }
+        };
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body class="min-h-screen bg-stone-50 font-sans text-stone-900">
+    <div data-shared-header></div>
+
+    <main class="mx-auto max-w-6xl px-4 py-10">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <p class="text-sm font-bold uppercase tracking-wide text-amber-700">Compra simulada</p>
+          <h1 class="mt-2 text-4xl font-black text-stone-950">Carrinho</h1>
+        </div>
+        <button data-clear-cart class="inline-flex items-center gap-2 rounded border border-stone-300 px-4 py-2 text-sm font-bold text-stone-700 transition hover:border-red-500 hover:text-red-600 disabled:cursor-not-allowed disabled:opacity-50">
+          <i data-lucide="trash-2" class="h-4 w-4"></i>
+          Limpar
+        </button>
+      </div>
+
+      <div class="mt-8 grid gap-6 lg:grid-cols-[1fr_320px] lg:items-start">
+        <div data-cart class="grid gap-4"></div>
+
+        <aside class="rounded border border-stone-200 bg-white p-5">
+          <p class="text-sm font-bold uppercase tracking-wide text-stone-500">Resumo</p>
+          <div class="mt-4 flex items-center justify-between gap-4 border-t border-stone-200 pt-4">
+            <span class="font-bold text-stone-700">Total</span>
+            <strong data-cart-total class="text-2xl font-black text-stone-950">R$ 0,00</strong>
+          </div>
+          <a href="cadastro.html" class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded bg-amber-500 px-4 py-3 text-sm font-black text-stone-950 transition hover:bg-amber-400">
+            Finalizar cadastro
+            <i data-lucide="arrow-right" class="h-4 w-4"></i>
+          </a>
+        </aside>
+      </div>
+    </main>
+
+    <div data-shared-footer></div>
+
+    <script src="js/cart-storage.js"></script>
+    <script src="js/render-shared.js"></script>
+    <script src="js/carrinho.js"></script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "nome": "Strato Classic 60",
+    "marca": "Fender",
+    "categoria": "eletrica",
+    "preco": 4899.9,
+    "imagem": "https://placehold.co/640x480/111827/f9fafb?text=Strato+Classic+60",
+    "descricao": "Guitarra eletrica versatil com timbre brilhante, ideal para blues, pop e rock classico.",
+    "especificacoes": {
+      "cordas": 6,
+      "material": "Alder com escala em maple",
+      "captadores": "3 single-coils"
+    },
+    "estoque": 7
+  },
+  {
+    "id": 2,
+    "nome": "Les Rock Standard",
+    "marca": "Gibson",
+    "categoria": "eletrica",
+    "preco": 7999.0,
+    "imagem": "https://placehold.co/640x480/1f2937/f9fafb?text=Les+Rock+Standard",
+    "descricao": "Modelo eletrico de corpo solido com sustain encorpado e resposta potente para solos.",
+    "especificacoes": {
+      "cordas": 6,
+      "material": "Mogno com tampo em maple",
+      "captadores": "2 humbuckers"
+    },
+    "estoque": 4
+  },
+  {
+    "id": 3,
+    "nome": "Folk Stage Cutaway",
+    "marca": "Yamaha",
+    "categoria": "acustica",
+    "preco": 1899.5,
+    "imagem": "https://placehold.co/640x480/374151/f9fafb?text=Folk+Stage+Cutaway",
+    "descricao": "Violao acustico com cutaway, boa projecao e tocabilidade confortavel para palco e estudo.",
+    "especificacoes": {
+      "cordas": 6,
+      "material": "Spruce laminado com laterais em nato",
+      "captadores": "Piezo com pre-amplificador"
+    },
+    "estoque": 10
+  },
+  {
+    "id": 4,
+    "nome": "Jumbo Natural Pro",
+    "marca": "Takamine",
+    "categoria": "acustica",
+    "preco": 3299.99,
+    "imagem": "https://placehold.co/640x480/4b5563/f9fafb?text=Jumbo+Natural+Pro",
+    "descricao": "Violao jumbo com grave cheio e acabamento natural para acompanhamentos ricos.",
+    "especificacoes": {
+      "cordas": 6,
+      "material": "Tampo em spruce e corpo em sapele",
+      "captadores": "Sistema eletroacustico onboard"
+    },
+    "estoque": 5
+  },
+  {
+    "id": 5,
+    "nome": "Precision Bass Vintage",
+    "marca": "Squier",
+    "categoria": "baixo",
+    "preco": 2499.0,
+    "imagem": "https://placehold.co/640x480/111827/fbbf24?text=Precision+Bass",
+    "descricao": "Baixo eletrico de quatro cordas com som direto, definido e facil de encaixar na mix.",
+    "especificacoes": {
+      "cordas": 4,
+      "material": "Poplar com escala em laurel",
+      "captadores": "Split single-coil"
+    },
+    "estoque": 6
+  },
+  {
+    "id": 6,
+    "nome": "Jazz Bass Modern",
+    "marca": "Ibanez",
+    "categoria": "baixo",
+    "preco": 2999.9,
+    "imagem": "https://placehold.co/640x480/1f2937/93c5fd?text=Jazz+Bass+Modern",
+    "descricao": "Baixo com dois captadores e perfil moderno, indicado para funk, fusion e gospel.",
+    "especificacoes": {
+      "cordas": 5,
+      "material": "Basswood com escala em jatoba",
+      "captadores": "2 single-coils ativos"
+    },
+    "estoque": 3
+  },
+  {
+    "id": 7,
+    "nome": "Classica Estudo C40",
+    "marca": "Giannini",
+    "categoria": "classica",
+    "preco": 699.9,
+    "imagem": "https://placehold.co/640x480/92400e/fff7ed?text=Classica+Estudo+C40",
+    "descricao": "Violao classico com cordas de nylon, leve e acessivel para primeiros estudos.",
+    "especificacoes": {
+      "cordas": 6,
+      "material": "Linden laminado",
+      "captadores": "Nao possui"
+    },
+    "estoque": 14
+  },
+  {
+    "id": 8,
+    "nome": "Classica Concert Nylon",
+    "marca": "Cordoba",
+    "categoria": "classica",
+    "preco": 2199.0,
+    "imagem": "https://placehold.co/640x480/78350f/fffbeb?text=Concert+Nylon",
+    "descricao": "Violao classico com timbre quente, indicado para repertorio erudito e MPB.",
+    "especificacoes": {
+      "cordas": 6,
+      "material": "Cedro macico com laterais em mogno",
+      "captadores": "Nao possui"
+    },
+    "estoque": 8
+  }
+]

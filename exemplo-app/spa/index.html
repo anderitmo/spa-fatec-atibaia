@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Shop SPA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"]
+              },
+              colors: {
+                brand: {
+                  ink: "#1c1917",
+                  gold: "#f59e0b",
+                  paper: "#fafaf9"
+                }
+              }
+            }
+          }
+        };
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body class="min-h-screen bg-stone-50 font-sans text-stone-900">
+    <div data-spa-header></div>
+    <div id="app" aria-live="polite"></div>
+    <div data-spa-footer></div>
+
+    <script src="js/cart-storage.js"></script>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
